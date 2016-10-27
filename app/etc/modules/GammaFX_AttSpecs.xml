@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * GammaFX
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the GammaFX.com license that is
+ * available through the world-wide-web at this URL:
+ * http://www.gammafx.com/license-agreement.html
+ * 
+ * DISCLAIMER
+ * 
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ * 
+ * @category 	GammaFX
+ * @package 	GammaFX_AttSpecs
+ * @copyright 	Copyright (c) 2012 GammaFX (http://www.gammafx.com/)
+ * @license 	http://www.gammafx.com/license-agreement.html
+ */
+-->
+<config>
+	<modules>
+		<GammaFX_AttSpecs>
+			<active>true</active>
+			<codePool>local</codePool>
+			<depends>
+				<GammaFX_Vanguard/>
+			</depends>
+		</GammaFX_AttSpecs>
+	</modules>
+</config>
