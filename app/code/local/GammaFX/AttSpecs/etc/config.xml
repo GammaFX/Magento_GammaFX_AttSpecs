@@ -1,8 +1,29 @@
 <?xml version="1.0"?>
+<!--
+/**
+ * GammaFX
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the GammaFX.com license that is
+ * available through the world-wide-web at this URL:
+ * http://www.gammafx.com/license-agreement.html
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category 	GammaFX
+ * @package 	GammaFX_AttSpecs
+ * @copyright 	Copyright (c) 2012 GammaFX (http://www.gammafx.com/)
+ * @license 	http://www.gammafx.com/license-agreement.html
+ */
+-->
 <config>
    <modules>
       <GammaFX_AttSpecs>
-         <version>0.0.1</version>
+         <version>1.0.1</version>
       </GammaFX_AttSpecs>
    </modules>
    <global>
@@ -15,6 +36,11 @@
 			<attspecs>
                 <class>GammaFX_AttSpecs_Block</class>
             </attspecs>
+			<catalog>
+				<rewrite>
+					<product_view_attributes>GammaFX_AttSpecs_Block_Catalog_Attributes</product_view_attributes>
+				</rewrite>
+			</catalog>
 		</blocks>
        <models>
            <attspecs>
@@ -35,6 +61,7 @@
 		<attspecs>
 			<general>
 				<is_metric>1</is_metric>
+				<is_hint>0</is_hint>
 			</general>
 		</attspecs>
 	</default>

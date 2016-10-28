@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * GammaFX
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the GammaFX.com license that is
+ * available through the world-wide-web at this URL:
+ * http://www.gammafx.com/license-agreement.html
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category 	GammaFX
+ * @package 	GammaFX_AttSpecs
+ * @copyright 	Copyright (c) 2012 GammaFX (http://www.gammafx.com/)
+ * @license 	http://www.gammafx.com/license-agreement.html
+ */
+-->
 <config>
     <acl>
         <resources>
@@ -9,7 +30,7 @@
                             <config>
                                 <children>
 									<attspecs translate="title" module="attspecs">
-										<title>AttSpecs adminhtml</title>
+										<title>AttSpecs</title>
 										<sort_order>0</sort_order>
 									</attspecs>
                                 </children>

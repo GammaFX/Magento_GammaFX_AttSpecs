@@ -1,5 +1,31 @@
 <?php
+/**
+ * GammaFX
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the GammaFX.com license that is
+ * available through the world-wide-web at this URL:
+ * http://www.gammafx.com/license-agreement.html
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category 	GammaFX
+ * @package 	GammaFX_AttSpecs
+ * @copyright 	Copyright (c) 2012 GammaFX (http://www.gammafx.com/)
+ * @license 	http://www.gammafx.com/license-agreement.html
+ */
 
+/**
+ * AttSpecs gather all attributes
+ *
+ * @category 	GammaFX
+ * @package 	GammaFX_AttSpecs
+ * @author  	GammaFX Bohdan
+ */
 class GammaFX_AttSpecs_Model_System_Config_Source_Attributes
 {
 
@@ -19,7 +45,7 @@ class GammaFX_AttSpecs_Model_System_Config_Source_Attributes
 
 		foreach($attributes as $attribute) {
 			$options[] = array(
-				'value' => $attribute->getAttributeId(),
+				'value' => $attribute->getAttributeCode(),
 				'label' => $attribute->getFrontendLabel().' - '.$attribute->getAttributeCode(),
 			);
 		}

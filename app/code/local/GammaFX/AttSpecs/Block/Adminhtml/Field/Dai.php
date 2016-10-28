@@ -1,14 +1,30 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: bodyanuk
- * Date: 10/18/16
- * Time: 23:08
+ * GammaFX
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the GammaFX.com license that is
+ * available through the world-wide-web at this URL:
+ * http://www.gammafx.com/license-agreement.html
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category 	GammaFX
+ * @package 	GammaFX_AttSpecs
+ * @copyright 	Copyright (c) 2012 GammaFX (http://www.gammafx.com/)
+ * @license 	http://www.gammafx.com/license-agreement.html
  */
 
 /**
- * Select for Display as Icon column
- * Class GammaFX_AttSpecs_Block_Adminhtml_Field_Dai
+ * AttSpecs Select for Display as Icon column
+ *
+ * @category 	GammaFX
+ * @package 	GammaFX_AttSpecs
+ * @author  	GammaFX Bohdan
  */
 class GammaFX_AttSpecs_Block_Adminhtml_Field_Dai extends Mage_Core_Block_Html_Select
 {

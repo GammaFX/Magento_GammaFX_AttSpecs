@@ -1,9 +1,30 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: bodyanuk
- * Date: 10/18/16
- * Time: 22:19
+ * GammaFX
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the GammaFX.com license that is
+ * available through the world-wide-web at this URL:
+ * http://www.gammafx.com/license-agreement.html
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category 	GammaFX
+ * @package 	GammaFX_AttSpecs
+ * @copyright 	Copyright (c) 2012 GammaFX (http://www.gammafx.com/)
+ * @license 	http://www.gammafx.com/license-agreement.html
+ */
+
+/**
+ * AttSpecs Featured table creator
+ *
+ * @category 	GammaFX
+ * @package 	GammaFX_AttSpecs
+ * @author  	GammaFX Bohdan
  */
 class GammaFX_AttSpecs_Block_Adminhtml_Specification extends Mage_Adminhtml_Block_System_Config_Form_Field_Array_Abstract
 {
@@ -22,7 +43,7 @@ class GammaFX_AttSpecs_Block_Adminhtml_Specification extends Mage_Adminhtml_Bloc
 	 */
 	public function _prepareToRender()
 	{
-		$this->addColumn('attribute_id', array(
+		$this->addColumn('attribute_code', array(
 			'label' => Mage::helper('attspecs')->__('Attributes'),
 			'renderer' => $this->_getRendererSpecification(),
 		));
@@ -86,7 +107,7 @@ class GammaFX_AttSpecs_Block_Adminhtml_Specification extends Mage_Adminhtml_Bloc
 	{
 		$row->setData(
 			'option_extra_attr_' . $this->_getRendererSpecification()
-				->calcOptionHash($row->getData('attribute_id')),
+				->calcOptionHash($row->getData('attribute_code')),
 			'selected="selected"'
 		);
 
