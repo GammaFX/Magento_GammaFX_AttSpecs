@@ -5,18 +5,25 @@ If you want to get attributes, you shoud use the helper attspecs/featured.
 
 Examples:
 1) Get specifications for another store
+```php
 Mage::helper('attspecs/featured')->setStoreId(5)->getSpecs();
+```
 
 2) Is scope metric? 
+```php
 Mage::helper('attspecs/featured')->isMetric(); // return true or false for current scope
+```
 
 3) Load all information about attributes from specs table:
+```php
 Mage::helper('attspecs/featured')->getAttributesData();
+```
 
 4) If you want to activate description hint on attribute hover - just activate option in CP. 
 
 5) You can use deafult magento method $_product->getAdditionalData(), this method will return default attribute data + specs data.
 Example with specs:
+```php
 return [
 	'code' => 'warranty',
 	'label' => 'Warranty',
@@ -28,18 +35,22 @@ return [
 		'icon' => 'get/image/by/media/someicon.png'
 	]
 ];
+```
 
 Example without specs:
+```php
 return [
 	'code' => 'warranty',
 	'label' => 'Warranty',
 	'value' => '3.5',
 	'attspecs' => null
 ];
+```
 
 6) This is example of integration in template:
 View: app/design/frontend/vanguard/default/template/catalog/product/view/attributes.phtml
 Parts of code:
+```php
 <?php $isHint = Mage::helper('attspecs/featured')->isHint(); ?>
 <?php $_additional = $this->getAdditionalData(); ?>
 <?php foreach ($_additional as $_data): ?>
@@ -65,3 +76,5 @@ Parts of code:
             </tr>
         	<?php } ?>
 <?php endforeach; ?>
+```
+
