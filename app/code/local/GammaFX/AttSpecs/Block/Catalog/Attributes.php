@@ -50,18 +50,6 @@ class GammaFX_AttSpecs_Block_Catalog_Attributes extends Mage_Catalog_Block_Produ
 	}
 
 	/**
-	 * Append JS / CSS
-	 * @return mixed
-	 */
-	protected function _prepareLayout()
-	{
-		if ($this->specHelper->isHint()) {
-			$this->getLayout()->getBlock('head')->addCss('css/' . GammaFX_AttSpecs_Helper_Featured::SECTION_NAME . '/tooltip.css');
-		}
-		return parent::_prepareLayout();
-	}
-
-	/**
 	 * $excludeAttr is optional array of attribute codes to
 	 * exclude them from additional data array
 	 *
@@ -74,7 +62,6 @@ class GammaFX_AttSpecs_Block_Catalog_Attributes extends Mage_Catalog_Block_Produ
 		$product = $this->getProduct();
 		$attributes = $product->getAttributes();
 		foreach ($attributes as $attribute) {
-//            if ($attribute->getIsVisibleOnFront() && $attribute->getIsUserDefined() && !in_array($attribute->getAttributeCode(), $excludeAttr)) {
 			if ($attribute->getIsVisibleOnFront() && !in_array($attribute->getAttributeCode(), $excludeAttr)) {
 				$value = $attribute->getFrontend()->getValue($product);
 

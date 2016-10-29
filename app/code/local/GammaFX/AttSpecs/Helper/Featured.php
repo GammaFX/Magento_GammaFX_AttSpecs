@@ -196,4 +196,17 @@ class GammaFX_AttSpecs_Helper_Featured extends Mage_Core_Helper_Abstract {
 		}
 		return $this->attributesData;
 	}
+
+	/**
+	 * Load styles if hint is switched on
+	 * @return bool|string
+	 */
+	public function setCanLoadTooltip()
+	{
+		if ($this->isHint()) {
+			return 'css/attspecs/tooltip.css';
+		}
+
+		return false;
+	}
 }
