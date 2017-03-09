@@ -78,3 +78,8 @@ Parts of code:
 <?php endforeach; ?>
 ```
 
+7) If you want to use attspecs anywhere, you must call singleton of block Mage_Catalog_Block_Product_View_Attributes like:
+```
+<?php $additionalAttributes = Mage::app()->getLayout()->getSingleBlock('catalog/product_view_attributes')->getAdditionalData(); ?>
+```
+
